@@ -1,17 +1,29 @@
-//classes ecma 6 me aaya tha
-class Fruits{
-    //let and var not use
-    name="orange"
-    constructor()
+//Inheritance es6
+class Catagory{
+    dryfruit()
     {
-        console.log("constructor",this.name)
+        return "almond is dry fruit"
     }
-    getFruits(i)
+    pomefruit()
     {
-        return i
+        return "apple is pome fruitS"
     }
 }
-// let f1=new Fruits();
-let f1=new Fruits;
-console.log(f1.getFruits("apple"))
-console.log(f1.name)
+class friuts extends Catagory{
+    constructor()
+    {   //parent class ka constructor call krna jaruri hai
+        super()
+        console.log("constructor")
+    }
+    getFruit()
+    {
+        return "you got fruit"
+    }
+
+}
+let f1 =new friuts
+console.log(f1.getFruit())
+let c1=new Catagory;
+console.log(c1.dryfruit())
+console.log(f1.pomefruit())
+//error in console.log(c1.getFruit())
