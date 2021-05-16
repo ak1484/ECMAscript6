@@ -1,31 +1,17 @@
-//Arrow function
-let a = [20, 4, 5, 12, 6];
-// function test1()
-// {return console.log("test1")}
-// //normal
-// test1()
-// let test2=function()
-// {return console.log("test2")}
-// //anonymus
-// test2()
-// test3=()=>
-// {return console.log("test3")}
-// //arrow fun
-// test3()
-// let newa=a.map((i)=>i*2)
-// console.log(newa)
-let item = {
-  name: "ankit",
-  getName: function () {
-    console.log("normal", this);
-  },
-  getNameArrow:()=> {
-    console.log("arrow", this);
-  },
-};
-//khud ka this call kra
-//this.getName.bind(this) for parent this
-item.getName();
-//parent ka this call krta hai tabhi
-//()=>this.test() ye apne parent ka he this uthata hai
-item.getNameArrow();
+//classes ecma 6 me aaya tha
+class Fruits{
+    //let and var not use
+    name="orange"
+    constructor()
+    {
+        console.log("constructor",this.name)
+    }
+    getFruits(i)
+    {
+        return i
+    }
+}
+// let f1=new Fruits();
+let f1=new Fruits;
+console.log(f1.getFruits("apple"))
+console.log(f1.name)
