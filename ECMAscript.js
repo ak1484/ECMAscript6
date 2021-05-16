@@ -1,10 +1,14 @@
-//Default Parameters
-function someval()
+//Template Literals(string tamplate literals)
+let quate ="either you run the code or code runs you"
+let by="ankit"
+let user="ankit saharan"
+x=10
+y=20
+function fName()
 {
-    return 10;
+    return "ak"
 }
-function add(a,b=20,c=someval())
-{
-    return a+b+c;
-}
-console.log(add(5))
+console.log("either you run the code or code runs you"+
+by+" Hello "+user)
+console.log(`either you run the code or code runs you
+${by} Hello ${x*y}`)
