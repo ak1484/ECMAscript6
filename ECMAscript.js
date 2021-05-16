@@ -1,26 +1,10 @@
-//Let keyword(let vs var)
-var a=10
-if(true)
+//Default Parameters
+function someval()
 {
-    var a=20
-    console.log(a)
+    return 10;
 }
-console.log(a)
-var a=10
-if(true)
+function add(a,b=20,c=someval())
 {
-    let a=20
-    console.log(a)
+    return a+b+c;
 }
-console.log(a)
-// let a=20
-// let a=10
-// console.log(a)
-//error
-//hosting can't use with let but it can use with var
-for (let i = 0; i < 10; i++) {
-  setTimeout(() => console.log(i), 1000);
-}
-for (var i = 0; i < 10; i++) {
-    setTimeout(() => console.log(i), 1000);
-  }
+console.log(add(5))
