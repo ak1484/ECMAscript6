@@ -1,7 +1,8 @@
-//destructuring Array
-let fruit=["apple",'mango','banana','kiwi','orange','pineapple','gwava','papaya']
-let [fruit1,,fruit3,fruit4="unknown fruit",...restfruit]=fruit
-console.log(fruit1)
-console.log(fruit3)
-console.log(fruit4)
-console.log(restfruit)
+//destructuring Object
+//no skip yha key k hisab se destr hoti hi wha index k 
+let user={name:"ankit",email:"ankit@test.com",mobile:99999,address:"poharka",work:"developer",degree:"btech"}
+let {email,mob=888,mobile,...address}=user
+console.log(email)
+console.log(mob)
+console.log(mobile)
+console.log(address)
