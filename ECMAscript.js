@@ -1,8 +1,7 @@
-//New global function
-console.log(isFinite(10))
-console.log(isFinite(10/0))
-console.log(isFinite(null))//isme true krega
-console.log(isNaN(10))
-console.log(isNaN("10"))
-console.log(isNaN("10ank"))
-console.log(isNaN(null))//isme bhi number he smjga
+//destructuring Array
+let fruit=["apple",'mango','banana','kiwi','orange','pineapple','gwava','papaya']
+let [fruit1,,fruit3,fruit4="unknown fruit",...restfruit]=fruit
+console.log(fruit1)
+console.log(fruit3)
+console.log(fruit4)
+console.log(restfruit)
