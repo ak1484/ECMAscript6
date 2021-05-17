@@ -1,8 +1,25 @@
-//destructuring Object
-//no skip yha key k hisab se destr hoti hi wha index k 
-let user={name:"ankit",email:"ankit@test.com",mobile:99999,address:"poharka",work:"developer",degree:"btech"}
-let {email,mob=888,mobile,...address}=user
-console.log(email)
-console.log(mob)
-console.log(mobile)
-console.log(address)
+//Spread Operator
+let fruit=['apple','banana','kiwi']
+let other=['orange','pineapple','guvava']
+let total=[...fruit,...other]
+console.log(total)
+//spread
+function P(a,b,c){
+    console.log(a,b,c)
+}
+P(...fruit)
+function Px(...a)
+{//rest
+    console.log(a)
+}
+P(...other)
+//copy kiya isliye
+let newFruit=[...fruit]
+newFruit.push("test")
+console.log(newFruit)
+console.log(fruit)
+//reference gya isliye
+let newother=other
+newother.push("test1")
+console.log(newother)
+console.log(other)
