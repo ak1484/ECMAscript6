@@ -1,25 +1,6 @@
-//Spread Operator
-let fruit=['apple','banana','kiwi']
-let other=['orange','pineapple','guvava']
-let total=[...fruit,...other]
-console.log(total)
-//spread
-function P(a,b,c){
-    console.log(a,b,c)
-}
-P(...fruit)
-function Px(...a)
-{//rest
-    console.log(a)
-}
-P(...other)
-//copy kiya isliye
-let newFruit=[...fruit]
-newFruit.push("test")
-console.log(newFruit)
-console.log(fruit)
-//reference gya isliye
-let newother=other
-newother.push("test1")
-console.log(newother)
-console.log(other)
+//Exponentiation operator
+console.log(2**3)//power
+console.log(2*3)//multi
+console.log(10**-2)//neg pow
+console.log(10**NaN)
+console.log(2**3**2)//multi pow
